@@ -1,0 +1,91 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+  position: fixed;
+  top: 30vh;
+  left: 10%;
+  width: 90%;
+  z-index: 100;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  height: 262px;
+}
+
+.content_wrapper {
+  flex: 1;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.content_wrapper .title,
+.content,
+.author,
+.date,
+.rating {
+  margin: 0.25rem 0;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.author {
+  font-size: 14px;
+}
+.date {
+  color: #969696;
+  font-size: 14px;
+}
+.space {
+  width: 4px;
+  height: auto;
+  display: inline-block;
+}
+.content {
+  flex: 1;
+  font-size: 16px;
+  overflow: auto;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.7rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.img_wrapper {
+  position: relative;
+  width: 182px;
+  height: 270px;
+  overflow: hidden;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    left: calc(50% - 20rem);
+    width: 40rem;
+  }
+}

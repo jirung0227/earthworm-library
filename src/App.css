@@ -1,0 +1,13 @@
+.Item {
+  border: 1px solid #000000;
+}
+body {
+  margin: 0;
+  background-color: #f2f4f6;
+}
+
+main {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 76rem;
+}

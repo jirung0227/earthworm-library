@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  height: 72px;
+  align-items: center;
+  border-bottom: 0.5px solid #dfdfdf;
+  background: #fff;
+  box-shadow: 0px 0px 20px -2px rgba(0, 0, 0, 0.05);
+}
+.header_content {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
+  max-width: 76rem;
+  color: #a451f7;
+  font-weight: bold;
+}
+.header_logo {
+  width: 24px;
+  margin-right: 0.4rem;
+}
